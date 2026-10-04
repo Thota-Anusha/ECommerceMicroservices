@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path="ci-cd.yml" />
+  </Folder>
   <Folder Name="/k8s/">
     <File Path="orderservice.yaml" />
     <File Path="paymentservice.yaml" />

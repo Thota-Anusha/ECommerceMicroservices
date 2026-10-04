@@ -1,0 +1,36 @@
+name: ECommerce Microservices CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        service:
+          - UserService.API
+          - ProductService.API
+          - OrderService.API
+          - PaymentService.API
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore ${{ matrix.service }}/${{ matrix.service }}.csproj
+
+      - name: Build
+        run: dotnet build ${{ matrix.service }}/${{ matrix.service }}.csproj --configuration Release --no-restore
