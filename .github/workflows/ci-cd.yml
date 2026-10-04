@@ -38,6 +38,5 @@ jobs:
       - name: Build container image
         run: |
           IMAGE_NAME=$(echo "${{ matrix.service }}" | tr '[:upper:]' '[:lower:]')
-          docker build \
-            -t "$IMAGE_NAME:latest" \
-            -f "${{ matrix.service }}/Dockerfile" .
+          echo "Building Docker image: $IMAGE_NAME:latest"
+          docker build -t "$IMAGE_NAME:latest" -f "${{ matrix.service }}/Dockerfile" .
