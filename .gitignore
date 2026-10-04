@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+**/bin/
+**/obj/
+
+# User-specific files
+ECommerceMicroservices.slnLaunch.user
+
+# Environment / secrets
+.env
+.env.*
+appsettings.Development.json
+# Application configuration / secrets
+**/appsettings.json

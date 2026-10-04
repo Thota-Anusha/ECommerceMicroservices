@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/k8s/">
+    <File Path="orderservice.yaml" />
+    <File Path="paymentservice.yaml" />
+    <File Path="productservice.yaml" />
+    <File Path="userservice.yaml" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="ApiGateway/ApiGateway.csproj" Id="6fea80da-95a4-473b-9aea-47851037c31b" />
+  <Project Path="OrderService.API/OrderService.API.csproj" Id="f8073fed-1b8a-4d42-b604-d18cd25c706d" />
+  <Project Path="OrderService.Business/OrderService.Business.csproj" Id="8119f757-76c1-4c69-8864-b17be85436c0" />
+  <Project Path="OrderService.Data/OrderService.Data.csproj" Id="9a017c5b-7ab9-4795-b469-8b5c6a962fb3" />
+  <Project Path="OrderService.Models/OrderService.Models.csproj" Id="a362fd91-c8cc-47f1-a99f-5debc4568ac6" />
+  <Project Path="PaymentService.API/PaymentService.API.csproj" Id="84de91c6-3950-4ad8-96ab-d975e8f9fa37" />
+  <Project Path="PaymentService.Business/PaymentService.Business.csproj" Id="7a0352f5-d01f-4bd7-a757-a6ee796dc647" />
+  <Project Path="PaymentService.Data/PaymentService.Data.csproj" Id="aaa27999-3fd0-4dba-95c0-26587ef90fcb" />
+  <Project Path="PaymentService.Models/PaymentService.Models.csproj" Id="32d6efca-2e82-4932-823e-60ebefb67256" />
+  <Project Path="ProductService.API/ProductService.API.csproj" />
+  <Project Path="ProductService.Business/ProductService.Business.csproj" Id="f8475feb-539a-462c-8e5a-44f2c29881a8" />
+  <Project Path="ProductService.Data/ProductService.Data.csproj" Id="61dd4afb-06a3-4743-999b-a6c9621fb4a5" />
+  <Project Path="ProductService.Models/ProductService.Models.csproj" Id="653d93ce-6bcd-4239-a814-de959effa61d" />
+  <Project Path="UserService.API/UserService.API.csproj" Id="71d4caad-8bd2-43d5-9dbc-c27b5e39ddd1" />
+  <Project Path="UserService.Business/UserService.Business.csproj" Id="74eb2c71-38bb-48ad-a749-c54775f04d39" />
+  <Project Path="UserService.Data/UserService.Data.csproj" Id="f6a2bcdf-fe68-4d50-96a5-189435e46d93" />
+  <Project Path="UserService.Models/UserService.Models.csproj" Id="462e9554-0ac2-412b-af1f-6d4dcbaece11" />
+</Solution>
